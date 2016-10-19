@@ -43,8 +43,83 @@
                             <value>com.sun.star.sheet.SpreadsheetDocument</value>
                         </prop>
                     </node>
+
+		    <node oor:name="m2" oor:op="replace">
+                        <prop oor:name="URL" oor:type="xs:string">
+                            <value>.uno:Italic</value>
+                        </prop>
+                        <prop oor:name="Title" oor:type="xs:string">
+                            <value/>
+                            <value xml:lang="en-US">Make text Italic</value>
+                        </prop>
+                        <prop oor:name="Target" oor:type="xs:string">
+                            <value>_self</value>
+                        </prop>
+                        <prop oor:name="Context" oor:type="xs:string">
+                            <value>com.sun.star.sheet.SpreadsheetDocument</value>
+                        </prop>
+                    </node>
                 </node>
             </node>
-        </node>        
+        </node>
+	
+	<node oor:name="OfficeToolBar">
+            <node oor:name="inco.niocs.test.addon.example" oor:op="replace">
+                <node oor:name="m1" oor:op="replace">
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>inco.niocs.test.addon.example:InsertDate</value>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value xml:lang="en-US">Insert Date</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.sheet.SpreadsheetDocument</value>
+                    </prop>
+                </node>
+                <node oor:name="m2" oor:op="replace">
+                    <prop oor:name="URL" oor:type="xs:string">
+                        <value>inco.niocs.test.addon.example:InsertTime</value>
+                    </prop>
+                    <prop oor:name="ImageIdentifier" oor:type="xs:string">
+                        <value/>
+                    </prop>
+                    <prop oor:name="Title" oor:type="xs:string">
+                        <value/>
+                        <value xml:lang="en-US">Insert Time</value>
+                    </prop>
+                    <prop oor:name="Target" oor:type="xs:string">
+                        <value>_self</value>
+                    </prop>
+                    <prop oor:name="Context" oor:type="xs:string">
+                        <value>com.sun.star.sheet.SpreadsheetDocument</value>
+                    </prop>
+                </node>
+            </node>
+        </node>
+	<node oor:name="Images">
+            <node oor:name="inco.niocs.test.addon.example.date" oor:op="replace">
+                <prop oor:name="URL">
+                    <value>inco.niocs.test.addon.example:InsertDate</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL">
+			<value>%origin%/images/date.png</value>
+                    </prop>	
+                </node>
+            </node>
+	    <node oor:name="inco.niocs.test.addon.example.time" oor:op="replace">
+                <prop oor:name="URL">
+                    <value>inco.niocs.test.addon.example:InsertTime</value>
+                </prop>
+                <node oor:name="UserDefinedImages">
+                    <prop oor:name="ImageSmallURL">
+			<value>%origin%/images/time.png</value>
+                    </prop>	
+                </node>
+            </node>
+        </node>
     </node>
 </oor:component-data>
